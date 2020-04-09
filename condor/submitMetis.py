@@ -26,7 +26,7 @@ if __name__ == "__main__":
     tag = "test"
 
     # Where the merged output will go
-    merged_dir = "/nfs-7/userdata/{}/tupler_babies/merged/VVV/{}/output/".format(os.getenv("USER"),tag)
+    merged_dir = "/nfs-7/userdata/{}/tupler_babies/merged/SS++/{}/output/".format(os.getenv("USER"),tag)
 
     # Loop over the dataset provided by the user few lines above, and do the Metis magic
     for dsname,shortname in sample_map.items():
@@ -48,7 +48,7 @@ if __name__ == "__main__":
                 scram_arch = "slc6_amd64_gcc700",
                 input_executable = "condor/condor_executable_metis.sh", # your condor executable here
                 tarfile = "condor/package.tar.xz", # your tarfile with assorted goodies here
-                special_dir = "VVVAnalysis/", # output files into /hadoop/cms/store/<user>/<special_dir>
+                special_dir = "SS++Analysis/", # output files into /hadoop/cms/store/<user>/<special_dir>
         )
         # When babymaking task finishes, fire off a task that takes outputs and merges them locally (hadd)
         # into a file that ends up on nfs (specified by `merged_dir` above)
