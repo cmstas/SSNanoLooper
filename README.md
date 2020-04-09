@@ -1,9 +1,26 @@
 # SS++ NanoLooper
 
-## Installation
+## Quick start
+
+Copy paste the following command to quickly run over ZZ to 4L single nano AOD file and get some histograms
 
     ssh uaf-10.t2.ucsd.edu
-    cd your/favoriate/working/directory
+    mkdir -p ss++_analysis/
+    cd ss++_analysis
+    git clone --recursive git@github.com:cmstas/SSNanoLooper.git
+    cd SSNanoLooper/
+    source rooutil/thisrooutil.sh
+    source rooutil/root.sh
+    make cleansmall; // Clean only SS nano looper related
+    make clean; // Full clean include NanoTools/rooutil related objects
+    make -j;
+    ./doAnalysis --input /hadoop/cms/store/group/snt/nanoaod/GluGluHToZZTo4L_M125_13TeV_powheg2_JHUGenV7011_pythia8__RunIIAutumn18NanoAODv5-Nano1June2019_102X_upgrade2018_realistic_v19-v1/C91570D8-46E6-6A4F-B722-857B9C5FE1F4.root \
+        --tree Events \
+        --mode 0 \
+        --debug
+
+## Installation
+
     git clone --recursive git@github.com:cmstas/SSNanoLooper.git
     cd SSNanoLooper/
     source rooutil/thisrooutil.sh
@@ -12,7 +29,7 @@
     make clean; // Full clean include NanoTools/rooutil related objects
     make -j;
 
-## Quick start
+## Running the ```doAnalysis``` executable
 
 Below command will create ```debug.root``` output from the loop
 
