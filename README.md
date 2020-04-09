@@ -1,14 +1,14 @@
-# TemplateNanoLooper
+# SS++ NanoLooper
 
 ## Installation
 
     ssh uaf-10.t2.ucsd.edu
     cd your/favoriate/working/directory
-    git clone --recursive git@github.com:sgnoohc/TemplateNanoLooper.git
-    cd TemplateNanoLooper/
+    git clone --recursive git@github.com:cmstas/SSNanoLooper.git
+    cd SSNanoLooper/
     source rooutil/thisrooutil.sh
     source rooutil/root.sh
-    make cleansmall; // Clean only Template looper related
+    make cleansmall; // Clean only SS nano looper related
     make clean; // Full clean include NanoTools/rooutil related objects
     make -j;
 
