@@ -10,8 +10,7 @@ void Begin_VBSHWW()
 
     // Create variables used in this category.
     // Please follow the convention of <category>_<varname> structure.
-    // N.B. PLEASE USE float TYPE FOR EVERYTHING, UNLESS IT IS LORENTZVECTOR (which is also done in float).
-    ana.tx.createBranch<float>("VBSHWW_intVar1");
+    ana.tx.createBranch<int>("VBSHWW_intVar1");
     ana.tx.createBranch<float>("VBSHWW_floatVar1");
     ana.tx.createBranch<LorentzVector>("VBSHWW_LVVar1");
 

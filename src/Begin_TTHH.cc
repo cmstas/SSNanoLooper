@@ -10,8 +10,7 @@ void Begin_TTHH()
 
     // Create variables used in this category.
     // Please follow the convention of <category>_<varname> structure.
-    // N.B. PLEASE USE float TYPE FOR EVERYTHING, UNLESS IT IS LORENTZVECTOR (which is also done in float).
-    ana.tx.createBranch<float>("TTHH_intVar1");
+    ana.tx.createBranch<int>("TTHH_intVar1");
     ana.tx.createBranch<float>("TTHH_floatVar1");
     ana.tx.createBranch<LorentzVector>("TTHH_LVVar1");
 

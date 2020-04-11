@@ -10,7 +10,6 @@ void Begin_Common()
 
     // Create variables used in this category.
     // Please follow the convention of <category>_<varname> structure.
-    // N.B. PLEASE USE float TYPE FOR EVERYTHING, UNLESS IT IS LORENTZVECTOR (which is also done in float).
     ana.tx.createBranch<vector<int>>("Common_electron_idxs");
     ana.tx.createBranch<vector<int>>("Common_muon_idxs");
     ana.tx.createBranch<LorentzVector>("Common_met_p4");
