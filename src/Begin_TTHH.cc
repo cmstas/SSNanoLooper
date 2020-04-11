@@ -22,7 +22,7 @@ void Begin_TTHH()
     // Create histograms used in this category.
     // Please follow the convention of h_<category>_<varname> structure.
     // N.B. Using nbins of size 180 or 360 can provide flexibility as it can be rebinned easily, as 180, 360 are highly composite numbers.
-    ana.histograms.addHistogram("h_TTHH_intVar1", 10, 0, 10, [&]() { return ana.tx.getBranch<float>("TTHH_intVar1"); } );
+    ana.histograms.addHistogram("h_TTHH_intVar1", 10, 0, 10, [&]() { return ana.tx.getBranch<int>("TTHH_intVar1"); } );
     ana.histograms.addHistogram("h_TTHH_floatVar1", 180, 0, 500, [&]() { return ana.tx.getBranch<float>("TTHH_floatVar1"); } );
     ana.histograms.addHistogram("h_TTHH_LVVar1_Pt", 180, 0, 150, [&]() { return ana.tx.getBranch<LorentzVector>("TTHH_LVVar1").pt(); } );
 
