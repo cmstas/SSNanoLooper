@@ -32,5 +32,5 @@ void Begin_TTHH()
     ana.cutflow.bookCutflows();
 
     // Book histograms to cuts that user wants for this category.
-    ana.cutflow.bookHistogramsForCut(hists_TTHH, "TTHH_Preselection");
+    ana.cutflow.bookHistogramsForCut(hists_TTHH, "Cut_TTHH_Preselection");
 }
