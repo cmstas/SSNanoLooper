@@ -32,5 +32,5 @@ void Begin_VBSHWW()
     ana.cutflow.bookCutflows();
 
     // Book histograms to cuts that user wants for this category.
-    ana.cutflow.bookHistogramsForCut(hists_VBSHWW, "Cut_VBSHWW_Preselection");
+    ana.cutflow.bookHistogramsForCut(hists_VBSHWW, "VBSHWW_Preselection");
 }
